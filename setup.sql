@@ -4,7 +4,7 @@ USE amuseing;
 CREATE TABLE IF NOT EXISTS `audio_artists` (
   `_id` int(11) NOT NULL,
   `name` tinytext COLLATE utf8mb4_bin NOT NULL,
-  `iconUrl` tinytext COLLATE utf8mb4_bin NOT NULL
+  `iconUrl` tinytext COLLATE utf8mb4_bin
 )  ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 
 CREATE TABLE IF NOT EXISTS `audio_songs` (
@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS `audio_song_artists` (
 CREATE TABLE IF NOT EXISTS `yt_downloads` (
   `video` varchar(11) COLLATE utf8mb4_bin NOT NULL,
   `output` tinytext COLLATE utf8mb4_bin NOT NULL,
-  `completed` tinyint(1) NOT NULL
+  `completed` tinyint(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 
 ALTER TABLE `audio_artists`
@@ -38,8 +38,6 @@ ALTER TABLE `audio_song_artists`
 
 ALTER TABLE `yt_downloads`
   ADD PRIMARY KEY (`video`);
-
--- Auto Increments
 
 ALTER TABLE `audio_artists`
   MODIFY `_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
