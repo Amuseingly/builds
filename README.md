@@ -1,6 +1,7 @@
 # Amuseing
 A web player for your music. Supports importing manually to the database and automatically via YouTube.
 
+**Live Demo: http://amusefrym5snmpoaewubzwnor3r3nt3jjmru3rcmg64affbwzehamhid.onion/ (Requires [Tor Browser](https://www.torproject.org/download/))**
 
 ## Requirements:
 
