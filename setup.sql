@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS `audio_song_artists` (
 CREATE TABLE IF NOT EXISTS `yt_downloads` (
   `video` varchar(11) COLLATE utf8mb4_bin NOT NULL,
   `output` tinytext COLLATE utf8mb4_bin NOT NULL,
-  `completed` tinyint(1) NOT NULL
+  `completed` tinyint(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 
 ALTER TABLE `audio_artists`
