@@ -4,7 +4,7 @@ USE amuseing;
 CREATE TABLE IF NOT EXISTS `audio_artists` (
   `_id` int(11) NOT NULL,
   `name` tinytext COLLATE utf8mb4_bin NOT NULL,
-  `iconUrl` tinytext COLLATE utf8mb4_bin NOT NULL
+  `iconUrl` tinytext COLLATE utf8mb4_bin
 )  ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 
 CREATE TABLE IF NOT EXISTS `audio_songs` (
