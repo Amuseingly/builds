@@ -39,8 +39,6 @@ ALTER TABLE `audio_song_artists`
 ALTER TABLE `yt_downloads`
   ADD PRIMARY KEY (`video`);
 
--- Auto Increments
-
 ALTER TABLE `audio_artists`
   MODIFY `_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
